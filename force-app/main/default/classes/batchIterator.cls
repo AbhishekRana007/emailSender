@@ -50,7 +50,7 @@ global class batchIterator implements Database.Batchable<String>, Database.State
       email.setHtmlBody(emailBody);
   email.setSenderDisplayName('Cynoteck Technology Solutions Private Limited');
          Multiemail.add(email);}
- 
+ sytem.debug('email');
  // Send the email
  Messaging.sendEmail(Multiemail);
          
